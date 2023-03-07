@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="Imagenes/logo.png" alt="Logo-Alura">
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="text-encriptador">
+                    <textarea id="txt-captura" class="text-area" cols="30" rows="10" required placeholder="Ingrese el texto aqui"></textarea>
+                </div>
+                <div class="aviso">
+                    <img src="Imagenes/Exclamacion.png" alt="Signo-de-admiración">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="btn-encriptador">
+                    <button class="btn encriptar">Encriptar</button>
+                    <button class="btn desencriptar">Desencriptar</button>
+                </div>
+            </section>
+
+            <section>
+                <div class="mensaje">
+                    <textarea id="txt-mensaje" class="text-area" readonly placeholder=""></textarea>
+                    <button class="btn copiar">Copiar</button>
+                </div>
+                <div class="no-mensaje">
+                    <img src="Imagenes/Muñeco.png" alt="muñeco viendo un diamante con lupa">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el testo que desees encriptar o desencriptar</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h1>Creador</h1>
+            <ul class="contacto">
+                <li class="contacto-items">
+                    <img src="Imagenes/github.svg" alt="ícono-github">
+                    <p>ElMarto03</p>
+                </li>
+                <li class="contacto-items">
+                    <img src="Imagenes/linked-in.svg" alt="ícono-linked-in">
+                    <p>Martin Dario Mazo Quingrejo</p>
+                </li>
+                <li class="contacto-items">
+                    <img src="Imagenes/instagram.svg" alt="ícono-instagram">
+                    <p>martin_dario_1</p>
+                </li>
+            </ul>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

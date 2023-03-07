@@ -1,0 +1,401 @@
+*{
+    background: #f3f5fc;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logo{
+    padding: 40px 0;
+    margin: 0 40px 0;
+    width: 120px;
+}
+
+.logo img{
+    margin-left: 40px;
+}
+
+main{
+    display: flex;
+    margin-left: 240px;
+}
+
+.text-encriptador{
+    width: 680px;
+    height: 500px;
+
+    padding-top: 40px;
+    padding-bottom: 200px;
+}
+
+.text-area{
+    width: 680px;
+    height: 500px;
+
+    border: none;
+    color: #0A3871;
+    text-transform: lowercase;
+    resize: none;
+}
+
+::placeholder{
+    color: #0A3871;
+}
+
+.text-area:focus{
+    outline: none;
+}
+
+.aviso{
+    display: flex;
+    gap: 8px;
+    
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.aviso img{
+    width: 16px;
+    height: 16px;
+}
+
+.btn-encriptador{
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 72px;
+    gap: 24px;
+}
+
+.btn{
+    width: 328px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    font-size: 16px;
+    line-height: 19px;
+    color: #0A3871;
+}
+
+.encriptar{
+    background: #0A3871;
+    color: #fff;
+}
+
+.mensaje{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+
+    background: #fff;
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+
+    text-align: center;
+}
+
+.no-mensaje{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+
+    background: #fff;
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    
+
+    text-align: center;
+}
+
+.no-mensaje img{
+    margin-top: 243px;
+    background: #fff;
+}
+
+.no-mensaje h2{
+    margin-top: 42px;
+    background: #fff;
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    margin: 0 32px;
+}
+
+.no-mensaje p{
+    margin-top: 16px;
+    background: #fff;
+
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0 32px;
+}
+
+#txt-mensaje{
+    width: 336px;
+    height: 761px;
+    color: #0A3871;
+    margin: 32px 32px;
+    background: #fff;
+    font-size: 24px;
+}
+
+::placeholder{
+    color: #495057;
+}
+
+.copiar{
+    margin: 0 32px;
+    width: 336px;
+    background: #fff;
+}
+
+footer{
+    color: #fff;
+    width: 1440px;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+footer h1{
+    background: #000;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 32px;
+}
+
+.contacto{
+    background: #000;
+    padding: 20px 0;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.contacto-items{
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.contacto-items img{
+    background: #000;
+    width: 35px;
+}
+
+.contacto-items p{
+    background: #000;
+}
+
+@media screen and (max-width: 768px){
+    main{
+        margin: 0 auto;
+        display: block;
+    }
+
+    .logo{
+        width: 40px;
+    }
+    
+    .logo img{
+        margin-left: 0;
+    }
+
+    .text-encriptador{
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    
+    .text-area{
+        height: 450px;
+    }
+
+    .aviso{
+        margin-left: 40px;
+    }
+
+    .btn-encriptador{
+        justify-content: center;
+        padding-bottom: 16px;
+    }
+
+    .mensaje{
+        display: none;
+        position: static;
+        box-sizing: border-box;
+        width: auto;
+        height: auto;
+
+        margin: 0 32px;
+        margin-bottom: 32px;
+    }
+
+    .no-mensaje{
+        position: static;
+        box-sizing: border-box;
+        width: auto;
+        height: 134px;
+
+        margin: 0 32px;
+        margin-bottom: 32px;
+    }
+
+    .no-mensaje img{
+        display: none;
+    }
+    
+    .no-mensaje h2{
+        padding-top: 32px;
+        background: #fff;
+    
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 120%;
+        margin: 0 32px;
+    }
+    
+    .no-mensaje p{
+        padding-top: 16px;
+        background: #fff;
+    
+        font-size: 16px;
+        line-height: 150%;
+        margin: 0 32px;
+    }
+
+    #txt-mensaje{
+        box-sizing: border-box;
+        width: 92%;
+        height: 200px;
+        color: #495057;
+        margin: 0 32px;
+        margin-top: 32px;
+    }
+
+    .copiar{
+        width: 92%;
+        margin-bottom: 32px;
+    }
+
+    footer{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 480px){
+    main{
+        margin: 0 auto;
+        display: block;
+    }
+
+    .logo{
+        padding-top: 24px;
+        margin-left: 16px;
+        width: 30px;
+    }
+    
+    .logo img{
+        margin-left: 0;
+    }
+
+    .text-encriptador{
+        margin: 0 16px;
+        padding-bottom: 50px;
+        width: auto;
+    }
+    
+    .text-area{
+        height: 450px;
+        width: 100%;
+    }
+
+    .aviso{
+        margin-left: 16px;
+    }
+
+    .btn-encriptador{
+        margin-left: 16px;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 16px;
+    }
+
+    .mensaje{
+        display: none;
+        position: static;
+        box-sizing: border-box;
+        width: auto;
+        height: auto;
+
+        margin: 0 32px;
+        margin-bottom: 32px;
+    }
+
+    .no-mensaje{
+        position: static;
+        box-sizing: border-box;
+        width: auto;
+        height: 186px;
+
+        margin: 0 32px;
+        margin-bottom: 32px;
+    }
+
+    .no-mensaje img{
+        display: none;
+    }
+    
+    .no-mensaje h2{
+        padding-top: 32px;
+        background: #fff;
+    
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 120%;
+        margin: 0 32px;
+    }
+    
+    .no-mensaje p{
+        padding-top: 16px;
+        background: #fff;
+    
+        font-size: 16px;
+        line-height: 150%;
+        margin: 0 32px;
+    }
+
+    #txt-mensaje{
+        box-sizing: border-box;
+        width: 80%;
+        height: 500px;
+        color: #495057;
+        margin: 0 32px;
+        margin-top: 32px;
+    }
+
+    .copiar{
+        width: 80%;
+        margin-bottom: 32px;
+    }
+
+    footer{
+        width: auto;
+    }
+
+    .contacto{
+        padding-left: 16px;
+        flex-direction: column;
+    }
+}
